@@ -21,8 +21,9 @@ npx react-native run-android
 ```
 
 ## Some images from app
-![mainScreenView](https://github.com/PatrykIZajac/WeatherApp/tree/master/Assets/mainScreenView.png)
-![favoriteScreenView](https://github.com/PatrykIZajac/WeatherApp/tree/master/Assets/favoriteScreenView.png)
+
+![mainScreenView](https://github.com/PatrykIZajac/WeatherApp/blob/master/Assets/mainScreenView.png)
+![favoriteScreenView](https://github.com/PatrykIZajac/WeatherApp/blob/master/Assets/favoriteScreenView.png)
 
 ## Libraries
 
