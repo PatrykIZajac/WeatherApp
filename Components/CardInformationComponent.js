@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import {StyleSheet, View, Text, Image, FlatList, Button} from 'react-native';
-import axios from 'axios';
+import React from 'react';
+import {StyleSheet, View, Text, Image, FlatList} from 'react-native';
 export default function CardInformationComponent({nextDaysWeather}) {
   return (
-    <View style={{marginTop: 10}}>
+    <View style={{marginTop: 10, marginLeft:10}}>
       {nextDaysWeather.list.length === 0 ? null : (
         <FlatList
           horizontal={true}
@@ -28,17 +27,17 @@ export default function CardInformationComponent({nextDaysWeather}) {
                   style={{
                     flexDirection: 'row',
                     alignContent: 'center',
-                    marginLeft: 12,
+                    marginLeft: 8,
                   }}>
                   <Text style={{fontWeight: 'bold', color: 'white'}}>
                     {Math.round(item.main.temp)}
                   </Text>
                   <Image
-                    style={{marginLeft: 3}}
+                    style={{marginLeft: 2}}
                     source={require('../Assets/smallDegreeIcon.png')}
                   />
                 </View>
-                <Text style={{fontWeight: 'bold', color: '#00FF88'}}>
+                <Text style={{fontWeight: 'bold', color: '#00FF88', marginRight:5}}>
                   {item.dt_txt.substr(10, 6)}
                 </Text>
               </View>
